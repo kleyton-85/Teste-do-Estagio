@@ -1,0 +1,14 @@
+// SCRIPT PARA CRIAÇÃO DO BANCO DE DADOS MYSQL 'bonafide' E TABELA 'noticias'
+
+CREATE DATABASE `bonafide`;
+
+USE `bonafide`;
+
+CREATE TABLE `noticias`(
+    `id` INT NOT NULL AUTO_INCREMENT,
+    `titulo` VARCHAR(100) NOT NULL,
+    `data` TIMESTAMP NOT NULL DEFAULT CURRENT_TIMESTAMP,
+    `texto` LONGTEXT NOT NULL,
+    `imagem` VARCHAR(300) NOT NULL,
+   PRIMARY KEY(`id`));
+
